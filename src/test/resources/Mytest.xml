@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <parameter name="browserName" value="chrome" />
+  <parameter name="url" value="https://opensource-demo.orangehrml" />
+  
+	  <test name="OrangeHRMLogin" enabled="false" >
+	    <classes>
+	      <class name="testNgSTuff.OrangeHRM">
+	      		<methods>
+	      			<include name="InitializeBrowser" />
+	      			<include name="EnterLoginDetail" />
+	      			<include name="TearDown" />
+	      		</methods>
+	      	</class>
+	    </classes>
+	  </test>
+	  
+   <test name="FlightBookingTest">
+    <classes>
+      <class name="testNgSTuff.OrangeHRM">
+      		<methods>
+      			<include name="InitializeBrowser" />
+      			<include name="EnterLoginDetail" />
+      			<include name="TearDown" />
+      		</methods>
+      	</class>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
